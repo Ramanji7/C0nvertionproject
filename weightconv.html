@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weightconv.css">
+  
+</head>
+<body>
+     <a href="Index.html" class="a"><img src="./house-solid.svg" alt="">Home</a>
+     <div class="main">
+          </nav>
+            <p style="font-family: fantasy ;color: rgb(43, 40, 43);font-size: 30pxpx;">Weight Convertion Kilogrem(kg) To Grams(g) </p> 
+          <div class="submain">
+                    <div class="sub1">
+                        <input type="text" placeholder="kg=1" id="value" style="width: 220px; height: 30px;">=
+                        <input type="text" placeholder="g=1000" id="output" style="width: 220px; height: 30px;">       
+                   </div>
+                   <div class="sub2"> 
+                       <br> <button type="button" onclick="convertion()" style="height: 30px; width: 90px;">Convert</button>
+                  </div>  
+          </div>
+      </div>     
+    <script>
+        function convertion() {
+            
+        
+        let value=document.getElementById("value").value;
+        let conv=document.getElementById("output");
+        let a=1000
+        conv.value=value*a;
+        }
+    </script>
+</body>
+</html>

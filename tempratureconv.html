@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tempratureconv.css">
+  
+</head>
+<body>
+     <a href="Index.html" class="a"><img src="./house-solid.svg" alt="">Home</a>
+     <div class="main">
+          </nav>
+            <p style="font-family: fantasy ;color: rgb(82, 28, 230);font-size: 15px;">Temperature Convertion Degree Celsius(&deg;C) To Degree Fahrenheit(&deg;F) </p> 
+          <div class="submain">
+                    <div class="sub1">
+                        <input type="text" placeholder="&deg;C=1" id="value" style="width: 220px;height: 30px;"> =
+                        <input type="text" placeholder="&deg;F=33.8" id="output" style="width: 220px; height: 30px;"> 
+                   </div>
+                   <div class="sub2"> 
+                       <br> <button type="button" onclick="convertion()" style="height: 30px; width: 90px;">Convert</button>
+                  </div>  
+          </div>
+      </div>     
+    <script>
+        function convertion() {
+            
+        
+        let value=document.getElementById("value").value;
+        let conv=document.getElementById("output");
+        conv.value=9/5*value+32;
+        }
+    </script>
+</body>
+</html>

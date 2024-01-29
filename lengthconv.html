@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lengthconv.css">
+</head>
+<body>
+    <a href="Index.html" class="a"><img src="./house-solid.svg" alt="">Home</a>
+    <div class="main">
+        <p id="heading" style="font-size: 25px;">Converting CM to Inches</p>
+        <div class="submain">
+                <div class="sub1">
+                    <input type="text" placeholder="CM=1" id="value" style="width: 220px;height: 30px;">=
+                    <input type="text" placeholder="Inches=2.54" id="output" style="width: 220px; height: 30px;" >
+                </div>
+                <div class="sub2">
+                    <br><button type="button" onclick="convert()" onclick="display()" style="height: 30px; width: 90px;">Convert</button>
+                </div>
+        </div> 
+    </div>
+    <script>
+        function convert(){ 
+        let value=document.getElementById("value").value;
+        let conv=document.getElementById("output");
+        conv.value=value/2.54;
+
+        }
+        // let a="converting CM to Inches"
+        // let a= document.getElementById("heading")
+        //     a.innerHTML="Converting CM to Inches"
+    //    function display() {
+    //     let conv=document.getElementById("output").value;
+    //     let value=document.getElementById("value");
+    //     value.conv=2.54*valu;
+
+    //    }
+
+    </script>
+</body>
+</html>
